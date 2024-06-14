@@ -1,0 +1,269 @@
+body{
+    font-family: 'Poppins', sans-serif !important;
+font-family: 'Roboto Slab', serif;
+font-weight: 400;
+
+}
+
+img{
+    max-width: 100%;
+    /*width: auto;*/
+}
+
+.navbar-dark {
+    background-color: #03045e;
+    border-color: #03045e;
+}
+
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, 
+.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active{
+    background-color: #03045e;
+    color: #fff;
+}
+
+.nav-sidebar .nav-link p{
+        font-size: 14px;
+}
+
+.nav-header {
+    display: none;
+}
+a.nav-link.user-img {
+    padding-top: 0;
+}
+
+footer.main-footer p {
+    margin-bottom: 0;
+}
+
+.content-header h1{
+    font-size: 22px;
+}
+
+.card-header{
+    padding: 10px 15px;
+}
+.card-body{
+    padding: 10px 15px;
+}
+table th, table td{
+    padding: 5px 15px !important;
+    font-size: 14px;
+}
+.table thead th {
+    font-weight: 500;
+}
+
+.modal-header h2,
+.modal-header h3,
+.modal-header h4,
+.modal-header h5{font-size: 18px; font-weight: 400;}
+
+
+
+
+/* :::::::Dashboard page css :::::::::*/
+.bg-light-primary{background:#ecf2ff; color: #5d87ff;}
+.bg-light-warning{background: #fef5e5; color: #ffae1f;}
+.bg-light-accent{background: #e8f7ff; color: #49beff;}
+.bg-light-error{background: #fdede8; color: #fa896b;}
+.bg-light-success{background: #e6fffa; color: #13deb9;}
+
+.info-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: none;
+    border-radius: 15px;
+}
+
+.info-box .info-box-icon {
+    font-size: 40px;
+}
+
+.info-box .info-box-content .info-box-text {
+    font-size: 14px;
+}
+
+.info-box .info-box-content .info-box-number {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+/* ::::: Table Design :::::::::: */
+.table-new table {
+    border: 0;
+    background: #fff;
+}
+
+.table-new table thead {
+    background: #03045e;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 10px 10px 0 0;
+}
+
+.table-new table thead th {
+    border: 0;
+    padding:10px !important;
+}
+
+.table-new .table thead th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.table-new .table thead th:last-child {
+    border-radius: 0px 10px 0px 0px;
+}
+
+
+
+
+.tempbox{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e9e9e9;
+}
+.tempbox h4{
+    font-size:20px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+.tempbox .temp-ico {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin: 0 auto;
+    background: #03045e;
+    line-height: 70px;
+    border-radius: 50%;
+}
+.tempbox button{
+    color: #fff;
+    background: #03045e;
+    border: 0;
+}
+
+.templatebox{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e9e9e9;
+}
+
+.templatebox .temp-img {
+    width: 100%;
+    height: 230px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+}
+
+.templatebox .temp-img:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: 1;
+    background: #03045e;
+    border-radius: 10px 10px 0 0;
+}
+
+.templatebox .temp-img img{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.templatebox h4 {
+    margin: 0;
+    padding: 10px;
+    height: 58px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.templatebox .templacheck {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.templacheck input[type=checkbox] + label {
+  display: block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.templacheck input[type=checkbox] {
+  display: none;
+}
+
+.templacheck input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #fff;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.templacheck input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+.templacheck input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+.templacheck input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+.templacheck input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+  .hideonmobile{
+      display:contents !important;
+  }
+  
+@media (max-width: 575.98px) {
+
+
+    .hideonmobile{
+      display:none !important;
+      font-size: 10px; 
+  }
+}
